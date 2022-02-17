@@ -41,14 +41,14 @@ public class testingFerry {
     }
 
     @Test
-    public void testingCarColorCount() {
+    public void testingCarCountForGreen() {
         String[] carColors = new String[]{"red", "green", "green"};
         Cars cars = new Cars(carColors, 6);
         assertEquals(cars.carColorCount(carColors, "green"), 2);
     }
 
     @Test
-    public void testingCarColorCount2() {
+    public void testingCarCountForRed() {
         String[] carColors = new String[]{"red", "green", "red", "red"};
         Cars cars = new Cars(carColors, 6);
         assertEquals(cars.carColorCount(carColors, "red"), 3);
